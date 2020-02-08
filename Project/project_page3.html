@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXO</title>
+    <link rel="stylesheet" href="../Project/project_css.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="page">
+     <!--사이드바-start-->
+     <div class="w3-sidebar w3-bar-block w3-black" style="width:150px">
+        <h3 class="w3-bar-item"><a href="https://vibe.naver.com/today"><img src="../Project/IMG/vibe.PNG" alt="vibe" class="img_vibe"></a></h3>
+
+        <a href="../Project/project_page1.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-yellow"><img src="../Project/IMG/bts5.webp" width="32px">BTS</a>
+        <a href="../Project/project_page2.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-pink"><img src="../Project/IMG/TWICE.png" width="23px" style="margin: 5px;">TWICE</a>
+        <a href="../Project/project_page3.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-green"><img src="../Project/IMG/exo1.png" width="27px" style="margin: 5px;">EXO</a>
+        <a href="../Project/project_page4.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-red"><img src="../Project/IMG/red-velvet-logo.png" width="35px"">레드벨벳</a>
+        <br>
+        <br>
+        <form action="https://vibe.naver.com/search?">
+            <input class="input" type="text" name="query">
+            <input id="search" type="submit" value="검색">
+        </form>
+      </div>
+    <!--사이드바-end-->
+
+
+    <!--메인-->
+    <div class="main">
+        <div class="image w3-content w3-display-container">
+            <img class="mySlides" src="../Project/IMG/exo_1.jpg">
+            <img class="mySlides" src="../Project/IMG/exo_2.jpg">
+            <img class="mySlides" src="../Project/IMG/exo_3.jpg">
+            <img class="mySlides" src="../Project/IMG/exo_4.jpg">
+            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle pic" style="width:100%">
+              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            </div>
+        </div>    
+        <!-- main -->
+        <div class="mubi">
+            <iframe width="500" height="350" src="https://www.youtube.com/embed/KH6ZwnqZ7Wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--앨범이름-->
+            <br> 'MAMA' EXO-K The 1st Mini Album<br>
+            <!--발매일자-->
+            2012.04.09<br>
+        </div>
+        <div class="mubi">
+            <iframe width="500" height="350" src="https://www.youtube.com/embed/I3dezFzsNss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <!--앨범이름-->
+         <br> The 1st Album 'XOXO (Kiss&Hug)' Repackage'<br>
+            <!--발매일자-->
+            2013.08.05<br>
+        </div>
+        <div class="mubi">
+                <iframe width="500" height="350" src="https://www.youtube.com/embed/yWfsla_Uh80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!--앨범이름-->
+            <br> The 2nd Album 'EXODUS'<br>
+                <!--발매일자-->
+                2015.03.30<br> 
+                </div><br>
+        <div class="mubi">
+            <iframe width="500" height="350" src="https://www.youtube.com/embed/IdssuxDdqKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <!--앨범이름-->
+             <br> THE WAR - The 4th Album<br>
+             <!--발매일자-->
+             2017.07.18<br> 
+        </div>     
+        <div class="mubi">
+              <!--iframe 크기 width="500" height="350"-->
+              <iframe width="500" height="350" src="https://www.youtube.com/embed/uxmP4b2a0uY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!--앨범이름-->
+              <br> OBSESSION - The 6th Album<br>
+              <!--발매일자-->
+              2019.11.27<br> 
+            <br></div>
+    </div>
+    
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</body>
+</html>
