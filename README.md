@@ -20,6 +20,10 @@ https://jina-choi.github.io/PlayData_Project/Project/project_page1.html
 - HTML5
 - CSS3
 - JavaScript
+- Layout
+- Hover Effect
+- Bootstrap
+- Linux
 
 <br/>
 <br/>
