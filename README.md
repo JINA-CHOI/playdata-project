@@ -4,7 +4,7 @@
 <br/>
 
 # 👩🏻‍💻구현
-https://jina-choi.github.io/PlayData_Project/Project/project_page1.html
+https://jina-choi.github.io/playdata-project/Project/project_page1.html
 <br/>
 <br/>
 
